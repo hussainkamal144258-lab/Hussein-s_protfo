@@ -1,0 +1,1757 @@
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #0b0b0b;
+    color: #ffffff;
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ 
+.portfolio-container {
+    width: 1512px;
+    height: 982px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://placehold.co/1512x982');
+    background-size: cover;
+    background-position: center;
+}
+
+ 
+.red-blur-circle {
+    width: 456px;
+    height: 616px;
+    position: absolute;
+    left: 520px;
+    top: 120px;
+    background: #F40000;
+    box-shadow: 98.6px 98.6px 98.6px rgba(244, 0, 0, 0.2);
+    border-radius: 9999px;
+    filter: blur(49.3px);
+    z-index: 1;
+}
+
+ 
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    padding: 0 50px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    width: 132px;
+    height: 38px;
+}
+
+.nav-links {
+    margin-left: 280px;
+    display: flex;
+    gap: 75px;
+}
+
+.nav-item {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.nav-item:first-child {
+    text-transform: capitalize;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 40px;
+}
+
+.auth-link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+ 
+.hero-section {
+    position: relative;
+    z-index: 5;
+}
+
+ 
+.hero-text {
+    position: absolute;
+    left: 51px;
+    top: 147px;
+    width: 455px;
+}
+
+.greeting {
+    color: #D70812;
+    font-size: 40px;
+    font-family: 'Vast Shadow', cursive;
+}
+
+.name {
+    color: #ffffff;
+    font-size: 53px;
+    font-family: 'Shojumaru', cursive;
+    line-height: 1.1;
+    margin-top: 10px;
+}
+
+.name .highlight {
+    color: #D70812;
+    font-size: 59px;
+}
+
+.skills-list {
+    margin-top: 30px;
+    font-size: 32px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.skill-white {
+    color: #ffffff;
+}
+
+.skill-red {
+    color: #D70812;
+    font-family: 'Inter', sans-serif;
+}
+
+.description {
+    margin-top: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.4;
+    color: #ffffff;
+}
+ 
+.hero-image-wrapper {
+    position: absolute;
+    left: 399px;
+    top: 36px;
+    z-index: 3;
+}
+
+.hero-image {
+    width: 650px;
+    height: 868px;
+    object-fit: cover;
+}
+
+ 
+.features-sidebar {
+    position: absolute;
+    left: 1247px;
+    top: 160px;
+    display: flex;
+    flex-direction: column;
+    gap: 62px;
+    z-index: 10;
+}
+
+.feature-item {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+
+.icon-circle {
+    width: 47.3px;
+    height: 46.4px;
+    background: #ffffff;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.feature-title {
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: 600;
+    line-height: 1.2;
+}
+
+ 
+.footer {
+    position: absolute;
+    left: 28px;
+    top: 954px;
+    z-index: 10;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Ruwudu', serif;
+}
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ 
+.portfolio-container {
+    width: 1512px;
+    height: 982px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://placehold.co/1512x982');
+    background-size: cover;
+    background-position: center;
+}
+
+ 
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 23px;
+    left: 0;
+    padding: 0 19px 0 19px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    width: 132px;
+    height: 38px;
+}
+
+.nav-links {
+    margin-left: 314px;
+    display: flex;
+    gap: 75px;
+}
+
+.nav-item {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.nav-item:first-child {
+    text-transform: capitalize;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 43px;
+    margin-right: 74px;
+}
+
+.auth-link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+ 
+.about-section {
+    position: relative;
+    z-index: 5;
+}
+
+ 
+.about-content {
+    position: absolute;
+    left: 108px;
+    top: 139px;
+    width: 700px;
+}
+
+.about-title {
+    font-family: 'Anek Telugu', sans-serif;
+    font-weight: 700;
+    line-height: 1;
+}
+
+.about-title .red-text {
+    color: #D70812;
+    font-size: 65px;
+}
+
+.about-title .white-text {
+    color: #ffffff;
+    font-size: 70px;
+}
+
+.about-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 500;
+    line-height: 1.4;
+    margin-top: 15px;
+    width: 433px;
+}
+ 
+.btn-blog {
+    display: inline-block;
+    width: 328px;
+    height: 39px;
+    line-height: 39px;
+    background-color: #D70812;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+    margin-top: 25px;
+    box-shadow: 0px 4px 41px #F40000;
+}
+
+ 
+.info-badges-bar {
+    width: 582px;
+    height: 78px;
+    margin-top: 60px;
+    padding: 16px 24px;
+    border-radius: 34px;
+    outline: 4px rgba(255, 30, 39, 0.60) solid;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.badge-item {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.badge-title {
+    display: block;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 1.1;
+}
+
+.badge-subtitle {
+    display: block;
+    font-size: 12px;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.8);
+}
+
+ 
+.testimonials-box {
+    width: 657px;
+    height: 161px;
+    background-color: #0B0B0B;
+    border-radius: 15px;
+    margin-top: 26px;
+    padding: 20px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.testimonials-header h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    line-height: 1.2;
+}
+
+.testimonials-header p {
+    font-family: 'Inter', sans-serif;
+    font-size: 10px;
+    font-weight: 500;
+    margin-top: 10px;
+    color: #a1a1a1;
+}
+
+.cards-container {
+    display: flex;
+    gap: 12px;
+}
+
+.testimonial-card {
+    width: 134px;
+    height: 121px;
+    border: 1px solid #2E0101;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.testimonial-card .quote {
+    font-family: 'Inter', sans-serif;
+    font-size: 8px;
+    font-weight: 500;
+    line-height: 1.3;
+}
+
+.author-info {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+
+.author-info img {
+    width: 27px;
+    height: 27px;
+    border-radius: 50%;
+}
+
+.author-info strong {
+    display: block;
+    font-size: 5px;
+    font-family: 'Inter', sans-serif;
+}
+
+.author-info span {
+    display: block;
+    font-size: 5px;
+    color: #888;
+}
+
+ 
+.about-image-container {
+    position: absolute;
+    left: 844px;
+    top: 61px;
+}
+
+.glow-effect {
+    position: absolute;
+    width: 314px;
+    height: 43px;
+    top: 529px;
+    left: 209px;
+    background: #000;
+    box-shadow: 0px 4px 141.7px #FF0000;
+    z-index: 1;
+}
+
+.about-image {
+    position: relative;
+    width: 594px;
+    height: 890px;
+    border-bottom-right-radius: 10px;
+    z-index: 2;
+    object-fit: cover;
+}
+
+ 
+.footer {
+    position: absolute;
+    left: 19px;
+    top: 953px;
+    z-index: 10;
+}
+
+.footer p {
+    font-family: 'Ruwudu', serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ 
+.portfolio-container {
+    width: 1512px;
+    height: 982px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://placehold.co/1512x982');
+    background-size: cover;
+    background-position: center;
+}
+
+ 
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    padding: 0 19px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    width: 132px;
+    height: 38px;
+}
+
+.nav-links {
+    margin-left: 310px;
+    display: flex;
+    gap: 75px;
+}
+
+.nav-item {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.nav-item:first-child {
+    text-transform: capitalize;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 43px;
+    margin-right: 78px;
+}
+
+.auth-link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+ 
+.projects-section {
+    position: relative;
+    z-index: 5;
+}
+
+.section-header {
+    position: absolute;
+    top: 165px;
+    left: 118px;
+    width: 1286px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.section-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    color: #ffffff;
+    text-shadow: 0px 4px 8px rgba(215, 8, 18, 1.0);
+}
+
+.btn-view-all {
+    display: inline-block;
+    width: 230px;
+    height: 39px;
+    line-height: 39px;
+    background-color: #D70812;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 20px;
+    font-weight: 800;
+    text-align: center;
+    text-decoration: none;
+    border-radius: 8px;
+}
+
+ 
+.projects-grid {
+    position: absolute;
+    top: 287px;
+    left: 115px;
+    display: flex;
+    gap: 122px;
+}
+
+.project-card {
+    width: 350px;
+    height: 334px;
+    background-color: #0F0F11;
+    border-radius: 15px;
+    position: relative;
+    padding: 9px;
+    overflow: hidden;
+}
+
+.project-img {
+    width: 100%;
+    height: 238px;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+ 
+.tags-container {
+    position: absolute;
+    top: 260px;
+    left: 14px;
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.tag {
+    background-color: #D70812;
+    color: #000000;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 800;
+    padding: 3px 10px;
+    border-radius: 8px;
+    text-transform: uppercase;
+}
+
+ 
+.project-title-badge {
+    position: absolute;
+    bottom: 15px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 21px;
+    background-color: #D70812;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.project-title-badge span {
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 11px;
+    font-weight: 700;
+    text-align: center;
+    white-space: nowrap;
+}
+
+ 
+.footer {
+    position: absolute;
+    left: 20px;
+    top: 951px;
+    z-index: 10;
+}
+
+.footer p {
+    font-family: 'Ruwudu', serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Sen', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ 
+.portfolio-container {
+    width: 1512px;
+    height: 982px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://placehold.co/1512x982');
+    background-size: cover;
+    background-position: center;
+}
+
+ 
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 24px;
+    left: 0;
+    padding: 0 19px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    width: 132px;
+    height: 38px;
+}
+
+.nav-links {
+    margin-left: 311px;
+    display: flex;
+    gap: 75px;
+}
+
+.nav-item {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.nav-item:first-child {
+    text-transform: capitalize;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 43px;
+    margin-right: 78px;
+}
+
+.auth-link {
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+ 
+.services-wrapper {
+    position: absolute;
+    top: 160px;
+    left: 225px;
+    width: 1061px;
+    height: 700px;
+    background-color: #000000;
+    padding: 20px 34px;
+    z-index: 5;
+}
+
+.services-title {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-align: center;
+    color: #ffffff;
+    margin-bottom: 30px;
+}
+
+ 
+.services-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 311.61px);
+    grid-template-rows: repeat(2, 282.91px);
+    gap: 16px 14px;
+    justify-content: center;
+}
+
+ 
+.service-card {
+    background: rgba(217, 217, 217, 0.13);
+    border-radius: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 15px;
+    text-align: center;
+}
+
+.service-icon {
+    width: 126px;
+    height: 108px;
+    object-fit: contain;
+    margin-bottom: 15px;
+}
+
+.service-name {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+.service-description {
+    font-family: 'Inter', sans-serif;
+    font-size: 15px;
+    font-weight: 800;
+    color: #ffffff;
+    line-height: 1.3;
+}
+
+ 
+.footer {
+    position: absolute;
+    left: 15px;
+    top: 957px;
+    z-index: 10;
+}
+
+.footer p {
+    font-family: 'Ruwudu', serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+ 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+ 
+.portfolio-container {
+    width: 1512px;
+    height: 982px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://placehold.co/1512x982');
+    background-size: cover;
+    background-position: center;
+}
+
+ 
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    padding: 0 19px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    width: 132px;
+    height: 38px;
+}
+
+.nav-links {
+    margin-left: 311px;
+    display: flex;
+    gap: 75px;
+}
+
+.nav-item {
+    font-family: 'Sen', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.nav-item:first-child {
+    text-transform: capitalize;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 43px;
+    margin-right: 78px;
+}
+
+.auth-link {
+    font-family: 'Sen', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+ 
+.contact-section {
+    position: absolute;
+    top: 161px;
+    left: 102px;
+    display: flex;
+    gap: 32px;
+    z-index: 5;
+}
+
+
+.contact-card {
+    background: #1C1C1C;
+    border-radius: 20px;
+    height: 468.69px;
+    padding: 24px;
+}
+
+
+.info-card {
+    width: 336.13px;
+}
+
+.info-card .subtitle {
+    font-size: 12px;
+    font-weight: 400;
+    color: #ffffff;
+    display: block;
+}
+
+.info-card .title {
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 12px;
+}
+
+.info-card .highlight {
+    color: #F40000;
+    font-size: 36px;
+}
+
+.info-card .description {
+    font-size: 10px;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 18px;
+}
+
+.channels-list {
+    border-left: 2px solid #F40000;
+    padding-left: 12px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.channel-item {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.channel-icon {
+    width: 30.77px;
+    height: 30.77px;
+}
+
+.channel-text h3 {
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.channel-text p {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.social-links {
+    display: flex;
+    gap: 9px;
+    margin-bottom: 18px;
+}
+
+.social-icon {
+    width: 35px;
+    height: 35px;
+    background: #ffffff;
+    border-radius: 4px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+}
+
+.social-icon.text-icon {
+    color: #F40000;
+    font-weight: 900;
+    font-size: 20px;
+}
+
+.build-tagline {
+    font-size: 10px;
+    font-weight: 400;
+}
+
+.build-tagline strong {
+    font-size: 12px;
+    font-weight: 900;
+}
+
+
+.form-card {
+    width: 395.31px;
+}
+
+.form-header {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    margin-bottom: 20px;
+}
+
+.icon-box {
+    width: 39.06px;
+    height: 36.69px;
+    outline: 2px solid #F40000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.form-header h2 {
+    font-size: 14px;
+    font-weight: 700;
+}
+
+.form-header p {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+}
+
+.input-group {
+    position: relative;
+    background: rgba(217, 217, 217, 0.20);
+    border-radius: 8px;
+    height: 37.87px;
+    display: flex;
+    align-items: center;
+    padding: 0 12px;
+}
+
+.textarea-group {
+    height: 111.25px;
+    align-items: flex-start;
+    padding-top: 10px;
+}
+
+.input-icon {
+    width: 21.30px;
+    height: 21.30px;
+    margin-right: 10px;
+}
+
+.input-group input,
+.input-group textarea {
+    background: transparent;
+    border: none;
+    outline: none;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 200;
+    width: 100%;
+    font-family: inherit;
+}
+
+.btn-submit {
+    width: 100%;
+    height: 37.87px;
+    background: #F40000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 14px;
+    font-weight: 800;
+    cursor: pointer;
+}
+
+
+.map-card {
+    width: 441.47px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.map-viewport {
+    position: relative;
+    width: 399px;
+    height: 208px;
+    margin: 0 auto;
+}
+
+.map-image {
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+    object-fit: cover;
+}
+
+.map-zoom-controls {
+    position: absolute;
+    right: -25px;
+    top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 4px;
+}
+
+.zoom-btn {
+    width: 29.59px;
+    height: 29px;
+    background: #F40000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px #F40000;
+}
+
+.map-locate-btn {
+    position: absolute;
+    right: -25px;
+    top: 70px;
+    width: 29.59px;
+    height: 29.30px;
+    background: #F40000;
+    border: none;
+    border-radius: 8px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    box-shadow: 0px 4px 12px #F40000;
+}
+
+.map-footer {
+    border-top: 1px solid #F40000;
+    padding-top: 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.map-location-info {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.map-location-info h3 {
+    font-size: 12px;
+    font-weight: 600;
+}
+
+.map-location-info p {
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.btn-view-map {
+    width: 123.09px;
+    height: 32.97px;
+    background: #F40000;
+    color: #ffffff;
+    font-size: 10px;
+    font-weight: 600;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+    border: 1px solid #000000;
+    box-shadow: 0px 4px 3.7px rgba(217, 217, 217, 0.13);
+}
+
+
+.footer {
+    position: absolute;
+    left: 19px;
+    top: 951px;
+    z-index: 10;
+}
+
+.footer p {
+    font-family: 'Ruwudu', serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+.portfolio-container {
+    width: 1512px;
+    height: 982px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://placehold.co/1512x982');
+    background-size: cover;
+    background-position: center;
+}
+
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    padding: 0 19px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    width: 132px;
+    height: 38px;
+}
+
+.nav-links {
+    margin-left: 320px;
+    display: flex;
+    gap: 75px;
+}
+
+.nav-item {
+    font-family: 'Sen', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.nav-item:first-child {
+    text-transform: capitalize;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 43px;
+    margin-right: 78px;
+}
+
+.auth-link {
+    font-family: 'Sen', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+.login-wrapper {
+    position: absolute;
+    top: 84px;
+    left: 510px;
+    z-index: 5;
+}
+
+.login-card {
+    width: 799px;
+    height: 631px;
+    background: rgba(15, 15, 17, 0.20);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px 85px 40px 140px;
+    position: relative;
+}
+
+
+.icon-box {
+    width: 66.35px;
+    height: 85.58px;
+    outline: 2px solid #F40000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 18px;
+}
+
+.icon-box img {
+    width: 66.13px;
+    height: 46.83px;
+}
+
+
+.login-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 12px;
+}
+
+.login-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    line-height: 1.3;
+    margin-bottom: 30px;
+}
+
+
+.login-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    width: 606.55px;
+    height: 55.71px;
+    background: rgba(217, 217, 217, 0.20);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+    margin-bottom: 14px;
+}
+
+.input-icon {
+    width: 38.44px;
+    height: 31.34px;
+    margin-right: 20px;
+    object-fit: contain;
+}
+
+.input-group input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-group input::placeholder {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+
+.form-options {
+    width: 606.55px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 15px;
+    margin-bottom: 30px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.remember-me input {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 18.86px;
+    height: 16.96px;
+    outline: 2px solid #524C4C;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.remember-me input:checked + .custom-checkbox {
+    background-color: #F40000;
+    outline-color: #F40000;
+}
+
+.forgot-password {
+    color: #F40000;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.btn-login {
+    width: 606.55px;
+    height: 60.55px;
+    background-color: #F40000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+
+.footer {
+    position: absolute;
+    left: 19px;
+    top: 949px;
+    z-index: 10;
+}
+
+.footer p {
+    font-family: 'Ruwudu', serif;
+    font-size: 12px;
+    color: #ffffff;
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+
+
+.portfolio-container {
+    width: 1512px;
+    height: 982px;
+    position: relative;
+    overflow: hidden;
+    background-image: url('https://placehold.co/1512x982');
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+.navbar {
+    width: 100%;
+    position: absolute;
+    top: 8px;
+    left: 0;
+    padding: 0 19px;
+    display: flex;
+    align-items: center;
+    z-index: 10;
+}
+
+.logo {
+    width: 132px;
+    height: 38px;
+}
+
+.nav-links {
+    margin-left: 311px;
+    display: flex;
+    gap: 75px;
+}
+
+.nav-item {
+    font-family: 'Sen', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: lowercase;
+}
+
+.nav-item:first-child {
+    text-transform: capitalize;
+}
+
+.auth-buttons {
+    margin-left: auto;
+    display: flex;
+    gap: 43px;
+    margin-right: 78px;
+}
+
+.auth-link {
+    font-family: 'Sen', sans-serif;
+    color: #ffffff;
+    font-size: 20px;
+    font-weight: 800;
+    text-decoration: none;
+}
+
+
+
+.auth-wrapper {
+    position: absolute;
+    top: 141.8px;
+    left: 0;
+    z-index: 5;
+}
+
+.auth-card {
+    width: 844px;
+    height: 525.2px;
+    background: rgba(15, 15, 17, 0.20);
+    backdrop-filter: blur(10px);
+    border-radius: 20px;
+    padding: 20px 60px;
+    position: relative;
+}
+
+
+
+.icon-box {
+    width: 67px;
+    height: 85.6px;
+    outline: 2px solid #F40000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 12px;
+}
+
+.icon-box img {
+    width: 68.2px;
+    height: 47.91px;
+}
+
+
+.auth-title {
+    font-size: 48px;
+    font-weight: 800;
+    color: #ffffff;
+    margin-bottom: 8px;
+}
+
+.auth-subtitle {
+    font-size: 24px;
+    font-weight: 500;
+    color: #ffffff;
+    margin-bottom: 20px;
+}
+
+
+
+.auth-toggle {
+    display: flex;
+    gap: 0;
+    margin-bottom: 20px;
+}
+
+.toggle-btn {
+    height: 40.96px;
+    border: none;
+    border-radius: 30px;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+
+.toggle-btn.active {
+    width: 270.6px;
+    background-color: #F40000;
+    color: #ffffff;
+    font-weight: 800;
+}
+
+.toggle-btn:not(.active) {
+    width: 312.4px;
+    background-color: #524C4C;
+    color: #ffffff;
+    opacity: 0.7;
+    font-weight: 400;
+    margin-left: -27px;
+}
+
+
+
+.auth-form {
+    display: flex;
+    flex-direction: column;
+}
+
+.input-group {
+    width: 585.2px;
+    height: 53.32px;
+    background: rgba(217, 217, 217, 0.20);
+    border-radius: 8px;
+    display: flex;
+    align-items: center;
+    padding: 0 18px;
+    margin-bottom: 14px;
+}
+
+.input-icon {
+    width: 37.09px;
+    height: 29.99px;
+    margin-right: 15px;
+    object-fit: contain;
+}
+
+.input-group input {
+    background: transparent;
+    border: none;
+    outline: none;
+    width: 100%;
+    color: #ffffff;
+    font-family: 'Inter', sans-serif;
+    font-size: 24px;
+    font-weight: 600;
+}
+
+.input-group input::placeholder {
+    color: #ffffff;
+    opacity: 0.8;
+}
+
+
+
+.form-options {
+    width: 585.2px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 5px;
+    margin-bottom: 20px;
+}
+
+.remember-me {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+    font-weight: 600;
+    color: #ffffff;
+    cursor: pointer;
+}
+
+.remember-me input {
+    display: none;
+}
+
+.custom-checkbox {
+    width: 18px;
+    height: 16.11px;
+    outline: 2px solid #524C4C;
+    border-radius: 2px;
+    display: inline-block;
+}
+
+.remember-me input:checked + .custom-checkbox {
+    background-color: #F40000;
+    outline-color: #F40000;
+}
+
+.forgot-password {
+    color: #F40000;
+    font-size: 20px;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+
+
+.btn-submit {
+    width: 700.7px;
+    height: 57.96px;
+    background-color: #F40000;
+    color: #ffffff;
+    border: none;
+    border-radius: 8px;
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    font-weight: 800;
+    text-transform: lowercase;
+    cursor: pointer;
+}
+
+
+
+.footer {
+    position: absolute;
+    left: 19px;
+    top: 948px;
+    z-index: 10;
+}
+
+.footer p {
+    font-family: 'Ruwudu', serif;
+    font-size: 12px;
+    color: #ffffff;
+}
