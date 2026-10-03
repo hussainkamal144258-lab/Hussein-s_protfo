@@ -1374,21 +1374,13 @@ a {
     margin-bottom: 10px;
 }
 
-.form-header .icon-box {
-    width: 40px;
-    height: 40px;
-    background: #fcf9fa;
-    border-radius: 50%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-shrink: 0;
-}
+ 
 
 .form-header .icon-box img {
     width: 20px;
     height: 20px;
     object-fit: contain;
+
 }
 
 .form-header h2 {
