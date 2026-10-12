@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussein's Portfolio - Blog</title>
+    
+    <link rel="stylesheet" href="blog.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;800&family=Ruwudu&family=Sen:wght@800&display=swap" rel="stylesheet">
+
+   
+</head>
+<body >
+
+    <div class="portfolio-container">
+        
+       
+         
+        <header class="navbar">
+            <img class="logo" src="./img/logo.png" alt="Logo">
+            
+            <nav class="nav-links">
+                <a href="index.html" class="nav-item">Home</a>
+                <a href="about.html" class="nav-item">About</a>
+                <a href="service.html" class="nav-item">services</a>
+                <a href="project.html" class="nav-item">projects</a>
+                <a href="contact.html" class="nav-item">contact</a>
+                 <a href="blog.html" class="nav-item">Blog</a>
+            </nav>
+
+            <div class="auth-buttons">
+                <a href="login.html" class="auth-link">login</a>
+                <a href="sign up.html" class="auth-link">sign up</a>
+            </div>
+        </header>
+
+     <main class="blog-container">
+    <h1>Blog & Articles</h1>
+    <p class="subtitle">Thoughts and articles on web design, development, and software architecture.</p>
+    
+    
+    <p id="no-blogs-msg" class="empty-msg">No blog posts published yet.</p>
+    
+     
+    <div id="blogsContainer" class="blogs-list"></div>
+</main>
+        
+        <footer class="footer">
+            <p>Copyright © 2026 by Hussein Kamal | All Rights Reserved.</p>
+        </footer>
+
+    </div>
+
+    
+   <script type="module">
+import { initializeApp } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-app.js";
+import { 
+    getFirestore, collection, getDocs, query, orderBy 
+} from "https://www.gstatic.com/firebasejs/10.8.0/firebase-firestore.js";
+
+const firebaseConfig = {
+  apiKey: "AIzaSyDCVsvDqn5_QqqGfVR9wggWprbtDYVrQXs",
+  authDomain: "my-protfolio-c481f.firebaseapp.com",
+  projectId: "my-protfolio-c481f",
+  storageBucket: "my-protfolio-c481f.firebasestorage.app",
+  messagingSenderId: "895873463739",
+  appId: "1:895873463739:web:a590f5957c2c7143d2009e",
+  measurementId: "G-Z2Y7LE7XW5"
+};
+
+const app = initializeApp(firebaseConfig);
+const db = getFirestore(app);
+
+document.addEventListener("DOMContentLoaded", () => {
+    loadBlogPosts();
+});
+
+async function loadBlogPosts() {
+    const container = document.getElementById("blogsContainer");
+    const noMsg = document.getElementById("no-blogs-msg");
+
+    if (!container) return;
+
+    try {
+        const q = query(collection(db, "blogs"), orderBy("createdAt", "desc"));
+        const snapshot = await getDocs(q);
+
+        if (snapshot.empty) {
+            if (noMsg) noMsg.style.display = "block";
+            container.innerHTML = "";
+            return;
+        }
+
+        if (noMsg) noMsg.style.display = "none";
+        container.innerHTML = "";
+
+        snapshot.forEach(doc => {
+            const data = doc.data();
+            
+             
+            let formattedDate = "N/A";
+            if (data.createdAt && data.createdAt.seconds) {
+                formattedDate = new Date(data.createdAt.seconds * 1000).toLocaleString();
+            }
+
+            const card = document.createElement("article");
+            card.className = "blog-card";
+
+            const titleElem = document.createElement("h2");
+            titleElem.className = "blog-title";
+            titleElem.textContent = data.title || "Untitled";
+
+            const dateElem = document.createElement("p");
+            dateElem.className = "blog-date";
+            dateElem.textContent = formattedDate;
+
+            const contentElem = document.createElement("p");
+            contentElem.className = "blog-content";
+            contentElem.textContent = data.content || "";
+
+            card.appendChild(titleElem);
+            card.appendChild(dateElem);
+            card.appendChild(contentElem);
+
+            container.appendChild(card);
+        });
+    } catch (err) {
+        console.error("Error loading blog posts:", err);
+    }
+}
+</script>
+    
+    
+</body>
+</html>
+

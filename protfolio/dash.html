@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hussein's Portfolio </title>
+    
+    <link rel="stylesheet" href="dash.css">
+    
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+   
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+
+    <div class="dashboard-container">
+
+         
+        <aside class="sidebar">
+            <div class="logo">
+                 <img class="logo" src="./img/logo.png" alt="Logo"> 
+            </div>
+
+            <ul class="nav-menu">
+                <li class="nav-item active" data-tab="overviewTab">
+                    <a href="#">
+                        <ion-icon name="grid-outline"></ion-icon>
+                        <span>Dashboard</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-tab="messagesTab">
+                    <a href="#">
+                        <ion-icon name="mail-unread-outline"></ion-icon>
+                        <span>Messages</span>
+                        <span class="badge" id="badgeMsg">0</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-tab="usersTab">
+                    <a href="#">
+                        <ion-icon name="people-outline"></ion-icon>
+                        <span>Users</span>
+                    </a>
+                </li>
+                <li class="nav-item" data-tab="blogTab">
+                    <a href="#">
+                        <ion-icon name="create-outline"></ion-icon>
+                        <span>Blog Creator</span>
+                    </a>
+                </li>
+            </ul>
+
+            <div class="sidebar-footer">
+                <a href="index.html" class="btn-exit">
+                    <ion-icon name="log-out-outline"></ion-icon>
+                    <span>Back to Portfolio</span>
+                </a>
+            </div>
+        </aside>
+
+         
+        <main class="main-content">
+
+            
+            <header class="topbar">
+                <div class="search-box">
+                    <ion-icon name="search-outline"></ion-icon>
+                    <input type="text" placeholder="Search messages, users, or posts...">
+                </div>
+
+                <div class="user-profile">
+                    
+                    <div class="user-info">
+                        <span class="name">Hussein Kamal</span>
+                        <span class="role"> Owner</span>
+                    </div>
+                </div>
+            </header>
+
+             
+            <div class="content-body">
+
+               
+                <section id="overviewTab" class="tab-content active">
+                    <div class="section-header">
+                        <h2>Overview</h2>
+                        <p>Real time performance and portfolio statistics</p>
+                    </div>
+
+                    <div class="cards-grid">
+                        <div class="card">
+                            <div class="card-info">
+                                <span class="card-title">Total Messages</span>
+                                <h3 class="card-value" id="msgCount">0</h3>
+                            </div>
+                            <div class="card-icon red-glow">
+                                <ion-icon name="mail-outline"></ion-icon>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-info">
+                                <span class="card-title">Registered Users</span>
+                                <h3 class="card-value" id="userCount">0</h3>
+                            </div>
+                            <div class="card-icon red-glow">
+                                <ion-icon name="people-outline"></ion-icon>
+                            </div>
+                        </div>
+
+                        <div class="card">
+                            <div class="card-info">
+                                <span class="card-title">Published Blogs</span>
+                                <h3 class="card-value" id="postCount">0</h3>
+                            </div>
+                            <div class="card-icon red-glow">
+                                <ion-icon name="document-text-outline"></ion-icon>
+                            </div>
+                        </div>
+                    </div>
+                </section>
+
+                 
+                <section id="messagesTab" class="tab-content">
+                    <div class="section-header">
+                        <h2>Contact Messages</h2>
+                        <p>Messages submitted by visitors through your contact form</p>
+                    </div>
+
+                    <div class="table-card">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Sender</th>
+                                    <th>Email</th>
+                                    <th>Message</th>
+                                    <th>Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="messagesTable">
+                                <tr>
+                                    <td colspan="4" class="empty-msg">Loading messages...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+                 
+                <section id="usersTab" class="tab-content">
+                    <div class="section-header">
+                        <h2>Registered Users</h2>
+                        <p>Accounts created on your portfolio website</p>
+                    </div>
+
+                    <div class="table-card">
+                        <table class="data-table">
+                            <thead>
+                                <tr>
+                                    <th>Email Address</th>
+                                    <th>User ID</th>
+                                    <th>Registration Date</th>
+                                </tr>
+                            </thead>
+                            <tbody id="usersTable">
+                                <tr>
+                                    <td colspan="3" class="empty-msg">Loading user list...</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </section>
+
+               
+                <section id="blogTab" class="tab-content">
+                    <div class="section-header">
+                        <h2>Create New Blog </h2>
+                        <p>Publish articles directly to your portfolio blog page</p>
+                    </div>
+
+                    <form id="blogForm" class="form-card">
+                        <div class="form-group">
+                            <label for="blogTitle">Blog Title</label>
+                            <input type="text" id="blogTitle" placeholder="e.g., Building Scalable Web Apps with JS" required>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="blogContent">Article Content</label>
+                            <textarea id="blogContent" rows="10" placeholder="Write your full blog post in HTML or Markdown text..." required></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-submit">
+                            <ion-icon name="paper-plane-outline"></ion-icon>
+                            <span>Publish Blog </span>
+                        </button>
+                    </form>
+                </section>
+
+            </div>
+        </main>
+
+    </div>
+
+    
+    <script type="module" src="dash.js"></script>
+</body>
+</html>

@@ -109,7 +109,7 @@ body {
     align-items: center;
     gap: 20px;
     margin: auto 0;
-    padding: 40px 0;
+    padding: 10px 0;
 }
 
 .hero-text {
@@ -400,11 +400,11 @@ a {
 }
 
 .nav-item {
-    font-family: 'Inter', sans-serif;
-    font-size: 1rem;
-    font-weight: 700;
-    color: #ffffff;
-    text-transform: capitalize;
+     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 0;
+    margin-bottom: 40px;
 }
 
 .nav-item:hover {
@@ -1864,7 +1864,7 @@ a {
     padding: 0;
     box-sizing: border-box;
     font-family: 'Sen', sans-serif;
-}
+   
 
 body {
     background-color: #0d0003;
@@ -2159,4 +2159,6 @@ a {
     flex-grow: 1;
     margin: auto 0;
     padding: 20px 0;
+}
+
 }
