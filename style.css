@@ -108,7 +108,7 @@ body {
     grid-template-columns: 1.1fr 1.3fr 0.8fr;
     align-items: center;
     gap: 20px;
-    margin: auto 0;
+    margin: auto 90;
     padding: 10px 0;
 }
 
@@ -479,13 +479,13 @@ a {
     display: inline-block;
     align-self: flex-start;
     font-family: 'Inter', sans-serif;
-    background: linear-gradient(135deg, #e60026, #99001a);
+    background: #F40000;
     color: #ffffff;
     padding: 14px 32px;
     border-radius: 30px;
     font-weight: 800;
     font-size: 0.95rem;
-    box-shadow: 0 0 20px rgba(230, 0, 38, 0.6);
+    box-shadow: 0 0 20px rgba(255, 2, 44, 0.6);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
@@ -1868,7 +1868,7 @@ a {
 
 body {
     background-color: #0d0003;
-    background-image: url('./img/log pic.png');
+    background-image: url('./img/contact.png');
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
