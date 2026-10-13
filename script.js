@@ -143,7 +143,8 @@ function initAuthForms() {
             const submitBtn = signupForm.querySelector(".btn-submit") || signupForm.querySelector('button[type="submit"]');
 
             const email = emailInput ? emailInput.value.trim() : "";
-            const password = passwordInput ? passwordInput.value.trim() : "";
+            const passwo 
+    getDocs(collection(db, "blogs")).then(srd = passwordInput ? passwordInput.value.trim() : "";
 
             if (!email || !password) {
                 showNotification("Please fill in all fields.", "error");
@@ -275,10 +276,10 @@ async function loadUsers() {
 function initBlogCreator() {
     const blogForm = document.getElementById("blogForm");
     const postCountElem = document.getElementById("postCount");
-
+ 
     getDocs(collection(db, "blogs")).then(snapshot => {
         if (postCountElem) postCountElem.textContent = snapshot.size;
-    }).catch(() => {});
+    }).catch(err => console.error("Error fetching post count:", err));
 
     if (!blogForm) return;
 
@@ -293,31 +294,39 @@ function initBlogCreator() {
         const content = contentInput ? contentInput.value.trim() : "";
 
         if (!title || !content) {
-            alert("Please fill in both the blog title and content.");
+            showNotification("Please fill in both the blog title and content.", "error");
             return;
         }
 
         if (submitBtn) {
             submitBtn.disabled = true;
+            submitBtn.dataset.originalText = submitBtn.textContent;
             submitBtn.textContent = "Publishing...";
         }
 
         try {
+             
             await addDoc(collection(db, "blogs"), {
                 title: title,
                 content: content,
                 createdAt: serverTimestamp()
             });
 
+            showNotification("Blog post published successfully!", "success");
             blogForm.reset();
-            window.location.href = "blog.html";
+
+             
+            setTimeout(() => {
+                window.location.href = "blog.html";
+            }, 1000);
+
         } catch (err) {
             console.error("Error publishing blog post:", err);
-            alert("Error publishing blog post: " + err.message);
+            showNotification("Error publishing blog post: " + err.message, "error");
 
             if (submitBtn) {
                 submitBtn.disabled = false;
-                submitBtn.textContent = "Publish Blog";
+                submitBtn.textContent = submitBtn.dataset.originalText || "Publish Blog";
             }
         }
     });
