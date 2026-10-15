@@ -88,141 +88,24 @@ a {
     position: relative;
 }
 
-.hero-text {
-    max-width: 455px;
-}
-
-.greeting {
-    color: #D70812;
-    font-size: 40px;
-    font-family: 'Vast Shadow', cursive;
-}
-
-.name {
-    color: #ffffff;
-    font-size: 53px;
-    font-family: 'Shojumaru', cursive;
-    line-height: 1.1;
-    margin-top: 10px;
-}
-
-.name .highlight {
-    color: #D70812;
-    font-size: 59px;
-}
-
-.skills-list {
-    margin-top: 30px;
-    font-size: 32px;
-    font-weight: 800;
-    line-height: 1.25;
-}
-
-.skill-white {
-    color: #ffffff;
-}
-
-.skill-red {
-    color: #D70812;
-    font-family: 'Inter', sans-serif;
-}
-
-.description {
-    margin-top: 25px;
-    font-size: 20px;
-    font-weight: 700;
-    line-height: 1.35;
-    color: #ffffff;
-
-}
-
- 
-.hero-image-wrapper {
-    display: flex;
-    justify-content: center;
-}
 
  
  
-.features-sidebar {
-    display: flex;
-    flex-direction: column;
-    gap: 45px;
-}
-
-.feature-item {
-    display: flex;
-    align-items: center;
-    gap: 15px;
-    position: relative;
-}
-
-.feature-item::after {
-    content: '';
-    position: absolute;
-    bottom: -15px;
-    left: 62px;
-    width: 40px;
-    height: 4px;
-    background-color: #D70812;
-}
-
-.icon-circle {
-    width: 47px;
-    height: 46px;
-    background: #ffffff;
-    border-radius: 50%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-shrink: 0;
-}
-
-.icon-circle img {
-    width: 32px;
-    height: 32px;
-    object-fit: contain;
-}
-
-.blog-section {
-    padding: 50px 0;
-    max-width: 1250px;
-    margin: 0 auto;
-}
-
-.blog-header {
-    margin-bottom: 45px;
-}
-
-.blog-header h1 {
-    font-size: 2.5rem;
-    color: #ffffff;
-    font-weight: 800;
-    margin-bottom: 10px;
-}
-
-.blog-header p {
-    color: #999;
-    font-size: 1.05rem;
-}
-
  
-.blog-grid {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
-    gap: 30px;
-}
+
+  
+ 
  
 .blog-card {
     background-color: #121212;
     border: 1px solid #1f1f1f;
-    border-left: 4px solid #D70812; /* Striking crimson accent line */
+    border-left: 4px solid #D70812; 
     border-radius: 10px;
-    padding: 30px;
+    padding: 10px;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    min-height: 240px;
+    min-height: 40px;
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
     position: relative;
