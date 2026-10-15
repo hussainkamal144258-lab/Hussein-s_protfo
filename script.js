@@ -143,8 +143,7 @@ function initAuthForms() {
             const submitBtn = signupForm.querySelector(".btn-submit") || signupForm.querySelector('button[type="submit"]');
 
             const email = emailInput ? emailInput.value.trim() : "";
-            const passwo 
-    getDocs(collection(db, "blogs")).then(srd = passwordInput ? passwordInput.value.trim() : "";
+            const password = passwordInput ? passwordInput.value.trim() : "";
 
             if (!email || !password) {
                 showNotification("Please fill in all fields.", "error");
