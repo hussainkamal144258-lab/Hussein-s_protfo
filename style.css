@@ -2163,3 +2163,257 @@ a {
 }
 
 }
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Sen', sans-serif;
+   
+
+body {
+    background-color: #000000;
+    color: #ffffff;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+} 
+ 
+.hero-section {
+    display: grid;
+    grid-template-columns: 1fr 1.2fr 0.8fr;
+    
+    align-items: center;
+    gap: 40px;
+    margin-top: 40px;
+    z-index: 5;
+    position: relative;
+}
+ 
+.blog-card {
+    background-color: #121212;
+    border: 1px solid #1f1f1f;
+    border-left: 4px solid #D70812; 
+    border-radius: 10px;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 40px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+    overflow: hidden;
+    margin-top: 40px;
+    width: 800px;
+}
+
+.blog-card:hover {
+    transform: translateY(-6px);
+    border-color: #D70812;
+    box-shadow: 0 14px 35px rgba(215, 8, 18, 0.25);
+}
+
+.blog-card-top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+
+.blog-card-meta {
+    font-size: 0.8rem;
+    color: #777;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    font-weight: 700;
+}
+
+.blog-card-tag {
+    font-size: 0.75rem;
+    color: #D70812;
+    background: rgba(215, 8, 18, 0.1);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-weight: 700;
+    letter-spacing: 1px;
+}
+
+.blog-card h3 {
+    font-size: 1.35rem;
+    color: #ffffff;
+    margin-bottom: 12px;
+    font-weight: 800;
+    line-height: 1.4;
+}
+
+.blog-card p {
+    color: #aaaaaa;
+    font-size: 0.93rem;
+    line-height: 1.6;
+    margin-bottom: 20px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+.blog-card-footer {
+    border-top: 1px solid #1a1a1a;
+    padding-top: 15px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.read-more-link {
+    color: #ffffff;
+    font-size: 0.85rem;
+    font-weight: 800;
+    text-decoration: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    transition: color 0.2s ease;
+}
+
+.read-more-link:hover {
+    color: #D70812;
+}
+
+.empty-msg {
+    color: #888;
+    font-size: 1.1rem;
+    grid-column: 1 / -1;
+    text-align: center;
+    padding: 50px;
+}
+
+.feature-title {
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: 600;
+    line-height: 1.2;
+    letter-spacing: 0.5px;
+}
+
+ 
+.footer {
+    margin-top: 40px;
+    z-index: 10;
+}
+
+.footer p {
+    color: #ffffff;
+    font-size: 12px;
+    font-family: 'Ruwudu', serif;
+}
+
+@media (max-width: 1100px) {
+    .portfolio-container {
+        padding: 20px;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+            "text image"
+            "features image";
+        gap: 30px;
+    }
+
+    .hero-text {
+        grid-area: text;
+    }
+
+    .hero-image-wrapper {
+        grid-area: image;
+    }
+
+    .features-sidebar {
+        grid-area: features;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 25px;
+    }
+
+    .feature-item::after {
+        display: none;
+    }
+}
+
+@media (max-width: 850px) {
+    .navbar {
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+    }
+
+    .nav-links {
+        gap: 20px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .auth-buttons {
+        gap: 20px;
+    }
+
+    .hero-section {
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "text"
+            "image"
+            "features";
+        text-align: center;
+    }
+
+    .description {
+        margin: 20px auto 0 auto;
+    }
+
+    .hero-image {
+        max-width: 380px;
+    }
+
+    .features-sidebar {
+        justify-content: center;
+    }
+
+    .footer {
+        text-align: center;
+    }
+}
+
+@media (max-width: 480px) {
+    .portfolio-container {
+        padding: 15px 12px;
+    }
+
+    .nav-links {
+        gap: 12px;
+    }
+
+    .nav-item, .auth-link {
+        font-size: 14px;
+    }
+
+    .hero-image {
+        max-width: 280px;
+    }
+
+    .features-sidebar {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 15px;
+        text-align: left;
+    }
+
+    .feature-title {
+        font-size: 10px;
+    }
+}
+}

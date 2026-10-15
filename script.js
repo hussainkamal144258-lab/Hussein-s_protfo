@@ -3,7 +3,8 @@ import {
     getAuth, 
     signInWithEmailAndPassword, 
     createUserWithEmailAndPassword, 
-    onAuthStateChanged 
+    onAuthStateChanged,
+    sendPasswordResetEmail
 } from "https://www.gstatic.com/firebasejs/10.8.0/firebase-auth.js";
 import { 
     getFirestore, collection, addDoc, getDocs, query, orderBy, serverTimestamp 
@@ -37,7 +38,36 @@ document.addEventListener("DOMContentLoaded", () => {
     loadMessages();
     loadUsers();
     initBlogCreator();
+    initForgotPassword();
+    
 });
+
+function initForgotPassword() {
+    const forgotLink = document.getElementById("forgotPasswordLink") || document.querySelector(".forgot-password");
+    if (!forgotLink) return;
+
+    forgotLink.addEventListener("click", async (e) => {
+        e.preventDefault();
+
+        // Grab email from the input field if user already typed it
+        const emailInput = document.querySelector('input[type="email"]') || document.getElementById("email");
+        let email = emailInput ? emailInput.value.trim() : "";
+
+        // If email field is empty, pop up a prompt asking for it
+        if (!email) {
+            email = prompt("Please enter your account email address to reset your password:");
+            if (!email) return; // User cancelled
+        }
+
+        try {
+            await sendPasswordResetEmail(auth, email);
+            showNotification("Password reset email sent! Check your inbox.", "success");
+        } catch (err) {
+            console.error("Password Reset Error:", err);
+            showNotification("Error: " + err.message, "error");
+        }
+    });
+}
 
 
 function protectDashboard() {
