@@ -132,18 +132,31 @@ function initAuthForms() {
            
             alert("Login Failed!\nCode: " + err.code + "\nMessage: " + err.message);
 
-            let errorMsg = "Invalid email or password. Please try again.";
-            if (err.code === "auth/invalid-email") {
-                errorMsg = "Please enter a valid email address.";
-            } else if (err.code === "auth/user-not-found" || err.code === "auth/wrong-password" || err.code === "auth/invalid-credential") {
-                errorMsg = "Invalid email or password. Please try again.";
-            } else if (err.code === "auth/operation-not-allowed") {
-                errorMsg = "Email/Password sign-in is disabled in Firebase Console.";
-            } else if (err.code === "auth/too-many-requests") {
-                errorMsg = "Access temporarily blocked due to many failed attempts.";
-            }
+           
+let errorMsg = "Login failed. Please try again.";
 
-            showNotification(errorMsg, "error");
+if (err.code === "auth/network-request-failed") {
+    errorMsg = "Network error! Please check your internet connection and try again.";
+
+} else if (err.code === "auth/invalid-email") {
+    errorMsg = "Please enter a valid email address.";
+
+} else if (
+    err.code === "auth/user-not-found" ||
+    err.code === "auth/wrong-password" ||
+    err.code === "auth/invalid-credential"
+) {
+    errorMsg = "Invalid email or password. Please try again.";
+
+} else if (err.code === "auth/operation-not-allowed") {
+    errorMsg = "Email/Password sign-in is disabled in Firebase Console.";
+
+} else if (err.code === "auth/too-many-requests") {
+    errorMsg = "Access temporarily blocked due to too many failed attempts.";
+}
+
+showNotification(errorMsg, "error");
+
 
             if (loginBtn) {
                 loginBtn.disabled = false;
