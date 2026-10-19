@@ -652,11 +652,10 @@ a {
 }
 
 .about-image {
-    max-width: 100%;
+    width: 100%;
+    max-width: 400px;
     height: auto;
-    max-height: 620px;
-    object-fit: contain;
-    filter: drop-shadow(0 10px 20px rgba(0, 0, 0, 0.7));
+    object-fit: cover;
 }
 
 .footer {
@@ -674,6 +673,7 @@ a {
     }
 
     .about-image-container {
+        
         order: -1;
     }
 
@@ -685,6 +685,9 @@ a {
 @media (max-width: 768px) {
     .portfolio-container {
         padding: 20px;
+         .about-image {
+        max-width: 100%;
+    }
     }
 
     .navbar {
